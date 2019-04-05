@@ -92,18 +92,18 @@ void menu();
 void agmalBangun();
 void irajTidur();
 ```
-####### variabel tunggu untuk menunggu hingga tidak disable.
-####### variabel bosen untuk menghitung apakah fitur Iraj Ayo Tidur atau Agmal Ayo Bangun sudah dijalankan lebih dari 3x atau belum
-####### variabel status untuk mengecek status wake_up_agmal dan spirit_iraj.
+###### variabel tunggu untuk menunggu hingga tidak disable.
+###### variabel bosen untuk menghitung apakah fitur Iraj Ayo Tidur atau Agmal Ayo Bangun sudah dijalankan lebih dari 3x atau belum
+###### variabel status untuk mengecek status wake_up_agmal dan spirit_iraj.
 
-####### Membuat variabel agmal dan iraj dengan tipe data orang.
+###### Membuat variabel agmal dan iraj dengan tipe data orang.
 
-####### Membuat Fungsi agmalBangun untuk mengecek fitur Agmal Ayo Bangun sudah dijalankan lebih dari 3x atau belum, jika sudah maka fitur iraj tidak bisa dijalankan. 
-####### Fungsi irajTidur untuk mengecek fitur iraj Ayo Tidur atau sudah dijalankan 3x lebih atau belum,jika sudah maka fitur agmal tidak bisa digunakan.
-####### Fungsi menu untuk menampilkan semua menu/fitur.
-####### Fungsi allStatus untuk menampilkan wakeUp agmal dan Spirit_Iraj.
-####### Fungsi agmalBosen untuk mendisable fitur iraj ketika sudah dijalankan 3x lebih. dan menunggu hingga 10 s, dan setelah 10 s maka fitur itu bisa kembali normal.
-####### Fungsi irajBosen untuk mendisable fitur agmal ketika sudah dijalankan 3x lebih. dan menunggu hingga 10 s, dan setelah 10 s maka fitur itu bisa kembali normal.
+###### Membuat Fungsi agmalBangun untuk mengecek fitur Agmal Ayo Bangun sudah dijalankan lebih dari 3x atau belum, jika sudah maka fitur iraj tidak bisa dijalankan. 
+###### Fungsi irajTidur untuk mengecek fitur iraj Ayo Tidur atau sudah dijalankan 3x lebih atau belum,jika sudah maka fitur agmal tidak bisa digunakan.
+###### Fungsi menu untuk menampilkan semua menu/fitur.
+###### Fungsi allStatus untuk menampilkan wakeUp agmal dan Spirit_Iraj.
+###### Fungsi agmalBosen untuk mendisable fitur iraj ketika sudah dijalankan 3x lebih. dan menunggu hingga 10 s, dan setelah 10 s maka fitur itu bisa kembali normal.
+###### Fungsi irajBosen untuk mendisable fitur agmal ketika sudah dijalankan 3x lebih. dan menunggu hingga 10 s, dan setelah 10 s maka fitur itu bisa kembali normal.
 
 
 
