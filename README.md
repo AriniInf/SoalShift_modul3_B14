@@ -41,7 +41,8 @@ void selectionSort(int arr[], int size)
 
 #### Pada Fungsi Main, membuat thread sebanyak n, dengan n adalah banyaknya argumen dikurangi 1. Lalu memanggil fungsi selectionSort dan mengoutputkan nilai factorial pada setiap threadnya. 
 
-``int main(int argc, char *argv[])
+
+```int main(int argc, char *argv[])
 { 
     int n;
     n = argc-1;
@@ -62,6 +63,6 @@ void selectionSort(int arr[], int size)
         printf("%d! = %llu\n",ar[i],hasil[ar[i]]);
     }
     
-}``
+}```
 
 
