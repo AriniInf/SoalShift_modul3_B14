@@ -105,6 +105,12 @@ void irajTidur();
 ###### Fungsi agmalBosen untuk mendisable fitur iraj ketika sudah dijalankan 3x lebih. dan menunggu hingga 10 s, dan setelah 10 s maka fitur itu bisa kembali normal.
 ###### Fungsi irajBosen untuk mendisable fitur agmal ketika sudah dijalankan 3x lebih. dan menunggu hingga 10 s, dan setelah 10 s maka fitur itu bisa kembali normal.
 
+## Soal 4
 
+Membuat program C untuk menyimpan list proses yang ada di (ps -aux) sebanyak 10 list dengan ketentuan ketentuan yang ada, dengan cara multithreading. pertama tama kita membuat fungsi void mkdir untuk membuat file FolderProses1 dan FolderProses2, lalu selanjutnya membuat void touch untuk membuat file ber ekstensi txt, dan disimpan di FolderProses1 dan FolderProses2.
+
+Setelah itu kita membuat fungsi untuk menyimpan proses yang ada di ps aux dan disimpan di file ber ekstensi txt yang tadi kita telah buat (SimpanProses1.txt dan SimpanProses2.txt) setelah itu kita kompres file ber ekstensi txt tersebut dengan nama KompresProses1 dan KompresProses2. Setelah dikompres, file yang berekstensi txt tadi harus hilang dari file FolderProses1 dan FolderProses2 maka dari itu kita menghapus file berektensi txt tadi dengan cara (rm) tetapi file .txt tadi tidak sepenuhnya hilang, karena sebenarnya file .txt itu telah di zip ke KompresProses1 dan KompresProses2.
+
+Setelah membuat semua void untuk hal hal diatas, maka setelahnya kita membuat main untuk membuat thread untuk menjalankan void void tersebut yang mana kodingannya seperti yang ada di file soal4.c . setelah kita membuat thread dan membuat join thread agar berjalan secara bersamaan, kita membuat fungsi "iter" yang mana gunanya untuk menghitung selama 15 detik kedepan, setelah 15 detik, file .txt yang telah di zip akan di unzip di FolderProses1 dan FolderProses2.
 
 
