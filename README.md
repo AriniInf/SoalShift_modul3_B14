@@ -16,7 +16,8 @@ void* factorial(void* arg)
         facto = facto*i;
     }
     hasil[num] = facto;
-}```
+}
+```
 
 #### Membuat Fungsi swap dan selectionSort untuk Menyortir inputan user dari yang paling kecil dengan metode selection sort
 
