@@ -5,7 +5,7 @@
 #### Membuat fungsi factorial untuk mencari nilai factorial dari nilai num, dan disimpan di variabel facto. Lalu hasil factorial dari semua input factorial dimasukkan ke array hasil.
 
 
-``void* factorial(void* arg)
+```void* factorial(void* arg)
 {
     int* nump = (int*) arg;
     int num = *nump;
@@ -15,11 +15,11 @@
         facto = facto*i;
     }
     hasil[num] = facto;
-}``
+}```
 
 #### Membuat Fungsi swap dan selectionSort untuk Menyortir inputan user dari yang paling kecil dengan metode selection sort
 
-``void swap(int *a, int *b)
+```void swap(int *a, int *b)
 {
     int temp;
     temp = *a;
@@ -37,7 +37,10 @@ void selectionSort(int arr[], int size)
                 swap(&arr[i], &arr[j]);
         }
     }
-}``
+}`
+
+```
+
 
 #### Pada Fungsi Main, membuat thread sebanyak n, dengan n adalah banyaknya argumen dikurangi 1. Lalu memanggil fungsi selectionSort dan mengoutputkan nilai factorial pada setiap threadnya. 
 
