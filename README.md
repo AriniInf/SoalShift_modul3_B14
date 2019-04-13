@@ -113,4 +113,44 @@ Setelah itu kita membuat fungsi untuk menyimpan proses yang ada di ps aux dan di
 
 Setelah membuat semua void untuk hal hal diatas, maka setelahnya kita membuat main untuk membuat thread untuk menjalankan void void tersebut yang mana kodingannya seperti yang ada di file soal4.c . setelah kita membuat thread dan membuat join thread agar berjalan secara bersamaan, kita membuat fungsi "iter" yang mana gunanya untuk menghitung selama 15 detik kedepan, setelah 15 detik, file .txt yang telah di zip akan di unzip di FolderProses1 dan FolderProses2.
 
+## Soal 5
+
+```c
+static struct termios old, new;
+/* Initialize new terminal i/o settings */
+void initTermios(int echo) 
+{
+  tcgetattr(0, &old); /* grab old terminal i/o settings */
+  new = old; /* make new settings same as old settings */
+  new.c_lflag &= ~ICANON; /* disable buffered i/o */
+  if (echo) {
+      new.c_lflag |= ECHO; /* set echo mode */
+  } else {
+      new.c_lflag &= ~ECHO; /* set no echo mode */
+  }
+  tcsetattr(0, TCSANOW, &new); /* use these new terminal i/o settings now */
+}
+
+/* Restore old terminal i/o settings */
+void resetTermios(void) 
+{
+  tcsetattr(0, TCSANOW, &old);
+}
+char getch_(int echo) 
+{
+  char ch;
+  initTermios(echo);
+  ch = getchar();
+  resetTermios();
+  return ch;
+}
+
+/* Read 1 character without echo */
+char getch(void) 
+{
+  return getch_(0);
+}
+
+    Fungsi berguna agar dapat mendekteksi key press (getch)
+```
 
