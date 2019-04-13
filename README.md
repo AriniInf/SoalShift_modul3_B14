@@ -71,7 +71,11 @@ int main(int argc, char *argv[])
     
 }
 ```
+## SOAL 2
 
+Untuk menyelesaikan soal ini, kita harus membuat 4 program. 2 untuk server (Pembeli dan Penjual), dan 2 lagi untuk client (Pembeli dan Penjual). kita membuat codingan program client dan server ini dengan cara mengopas codingan template Client dan Server di modul 3, dan membuat tambahan value dan fungsi, untuk membuat fungsi tambah dan kurang pada client, fungsi tambah pada client penjual dan fungsi kurang pada client pembeli. fungsi tersebut akan dikirimkan ke server yang mana nanti server penjual berguna untuk menambahkan stock yang ada, dan server pembeli untuk mengurangi stock yang ada. Kedua server ini saling berhubungan, sehingga ketika kita menambahkan stock pada client penjual, maka otomatis stock yang ada pada client pembeli juga akan bertambah dengan menggunakan code (key_t).
+
+Kita juga harus menambahkan fungsi pengurangan stock dan penambahkan stock pada client pembeli dan penjual, dengan cara client pembeli, membeli stock yang ada pada server, jika stock tersedia maka akan tertulis "transaksi berhasil" dan stock akan berkurang 1 di server pembeli dan penjual, namun jika stick tidak tersedia makan akan tertulis "transaksi gagal" dan stock tidak akan bertambah maupun berkurang.
 
 ## SOAL 3
 
